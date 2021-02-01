@@ -8,6 +8,8 @@ namespace ContaBancaria
         {
             ContaBancaria conta;
 
+            Console.WriteLine("Seja Bem-Vindo ao sistema bancário!!!" + "\n");
+
             Console.Write("Entre com o número da agência: ");
             var agencia = int.Parse(Console.ReadLine());
 
