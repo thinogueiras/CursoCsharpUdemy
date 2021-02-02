@@ -23,7 +23,7 @@ namespace ContaBancaria
         {
             if (depositoIncial <= 0)
             {
-                throw new ArgumentException("Valor para depósito inválido, por favor informe um valor maior que zero.", nameof(depositoIncial))
+                throw new ArgumentException("Valor para depósito inválido, por favor informe um valor maior que zero.", nameof(depositoIncial));
             }
             else
             {
