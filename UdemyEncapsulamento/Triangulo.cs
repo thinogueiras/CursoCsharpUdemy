@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UdemyPOO
+namespace UdemyEncapsulamento
 {
     public class Triangulo
     {

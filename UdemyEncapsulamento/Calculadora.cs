@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UdemyPOO
+namespace UdemyEncapsulamento
 {
     public class Calculadora
     {
