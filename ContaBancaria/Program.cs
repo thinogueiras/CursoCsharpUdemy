@@ -40,7 +40,7 @@ namespace ContaBancaria
                     Console.Write("\nDados da conta: " + "\n" + conta + "\n");
                 }
 
-                Console.Write("\nEntre com um valor para depósito adicional: ");
+                Console.Write("\nEntre com um valor para depósito: ");
                 var valorDepositoAdicional = double.Parse(Console.ReadLine());
                 conta.Depositar(valorDepositoAdicional);
                 Console.Write("\nDados da conta atualizados: " + "\n" + conta + "\n");

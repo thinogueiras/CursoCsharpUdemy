@@ -17,11 +17,18 @@ namespace ContaBancaria
             Agencia = agencia;
             Conta = conta;            
             Titular = titular;            
-        }
+        }        
 
         public ContaBancaria(int agencia, int conta, string titular, double depositoIncial) : this(agencia, conta, titular)
         {
-            Depositar(depositoIncial);
+            if (depositoIncial <= 0)
+            {
+                throw new ArgumentException("Valor para depósito inválido, por favor informe um valor maior que zero.", nameof(depositoIncial))
+            }
+            else
+            {
+                Depositar(depositoIncial);
+            }
         }
 
         public void Depositar(double valor)
@@ -31,7 +38,14 @@ namespace ContaBancaria
 
         public void Sacar(double valor)
         {
-            Saldo -= valor + 5;
+            if (valor <= 0)
+            {
+                throw new ArgumentException("Valor para saque inválido, por favor informe um valor maior que zero.", nameof(Saldo));                
+            }
+            else
+            {
+                Saldo -= valor + 5;
+            }            
         }
 
         public override string ToString()
