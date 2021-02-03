@@ -7,11 +7,19 @@ namespace Estrutura_de_Dados
     {
         static void Main(string[] args)
         {
-            var soma1 = Calculator.Sum(1, 2, 3);
-            var soma2 = Calculator.Sum(new int[] { 3, 4, 5 });
+            var soma1 = Calculator.SomarNumeros(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+            var soma2 = Calculator.SomarNumeros(new int[] { 3, 4, 5 });
 
-            Console.WriteLine(soma1);
-            Console.WriteLine(soma2);
+            var a = 10;
+            int triplicar;
+
+            //Calculator.TriplicarValorRef(ref a);
+            Calculator.TriplicarValorOut(a, out triplicar);
+
+            //Console.WriteLine(soma1);
+            //Console.WriteLine(soma2);
+            //Console.WriteLine(a);
+            Console.WriteLine(triplicar);
 
             Console.ReadLine();
         }

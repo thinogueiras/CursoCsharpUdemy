@@ -6,7 +6,7 @@ namespace Estrutura_de_Dados
 {
     class Calculator
     {
-        public static int Sum(params int[] numeros)
+        public static int SomarNumeros(params int[] numeros)
         {
             var sum = 0;
 
@@ -15,6 +15,16 @@ namespace Estrutura_de_Dados
                 sum += numeros[i];
             }
             return sum;
+        }
+
+        public static void TriplicarValorRef(ref int x)
+        {
+            x *= 3;
+        }
+
+        public static void TriplicarValorOut(int origem, out int result)
+        {
+            result = origem * 3;
         }
     }
 }
