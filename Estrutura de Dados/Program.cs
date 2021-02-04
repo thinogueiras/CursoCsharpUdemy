@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 
 namespace Estrutura_de_Dados
@@ -6,6 +7,23 @@ namespace Estrutura_de_Dados
     class Program
     {
         static void Main(string[] args)
+        {
+            var lista = new List<string>()
+            {
+                "Marcos",
+                "Thiago",
+                "João"
+            };
+
+            foreach (var list in lista)
+            {
+                Console.WriteLine(list);
+            }
+
+            Console.ReadLine();
+        }
+
+        void TestarCalculos()
         {
             var soma1 = Calculator.SomarNumeros(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
             var soma2 = Calculator.SomarNumeros(new int[] { 3, 4, 5 });
@@ -20,8 +38,6 @@ namespace Estrutura_de_Dados
             //Console.WriteLine(soma2);
             //Console.WriteLine(a);
             Console.WriteLine(triplicar);
-
-            Console.ReadLine();
         }
 
         void ExercicioFixacao()
