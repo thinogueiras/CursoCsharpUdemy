@@ -10,19 +10,102 @@ namespace Estrutura_de_Dados
         {
             var lista = new List<string>()
             {
-                "Marcos",
+                "Marco",
                 "Thiago",
                 "João"
             };
+
+            lista.Add("Maria"); // Adiciona no final da lista
+            lista.Add("Alex");
+            lista.Add("Oscar");
+            lista.Add("Joaquin");
+            lista.Add("Ana");
+
+            lista.Insert(2, "Gisele"); // Desloca o valor da posição 2 para a 3
+
+            foreach (var list in lista)
+            {  
+                Console.WriteLine(list);
+            }
+            
+            Console.WriteLine("\nLista count: " + lista.Count);
+
+            Console.Write("------------------------------------------------------");
+
+            var localizador1 = lista.Find(x => x[0] == 'A'); // Expressão que substitui a função TestLocalizador
+            Console.WriteLine("\nPrimeiro item da lista que começa com A: " + localizador1);
+
+            var localizador2 = lista.FindLast(x => x[0] == 'M');
+            Console.WriteLine("\nÚltimo item da lista que começa com M: " + localizador2);
+            
+            Console.Write("------------------------------------------------------");
+
+            var localizador3 = lista.FindIndex(x => x[0] == 'J');
+
+            Console.WriteLine("\nFirst position J: " + localizador3);
+
+            var localizador4 = lista.FindLastIndex(x => x[0] == 'A');
+
+            Console.WriteLine("\nLast position A: " + localizador4);
+
+            var listFiltro = lista.FindAll(x => x.Length == 5);
+
+            foreach (var list in listFiltro)
+            {
+                Console.WriteLine("\n" + list + " contém " + list.Length + " caracteres");
+            }
+
+            lista.Remove(lista[5]);
+            Console.Write("------------------------------------------------------" + "\n");
 
             foreach (var list in lista)
             {
                 Console.WriteLine(list);
             }
 
+            Console.WriteLine("\nLista count: " + lista.Count);
+
+            Console.Write("------------------------------------------------------" + "\n");
+
+            lista.RemoveAll(x => x[0] == 'M');   
+
+            foreach (var list in lista)
+            {
+                Console.WriteLine(list);
+            }
+
+            Console.WriteLine("\nLista count: " + lista.Count);
+
+            Console.Write("------------------------------------------------------" + "\n");
+
+            lista.RemoveAt(0);
+            foreach (var list in lista)
+            {
+                Console.WriteLine(list);
+            }
+
+            Console.WriteLine("\nLista count: " + lista.Count);
+
+            Console.Write("------------------------------------------------------" + "\n");
+
+            lista.RemoveRange(1, 3);
+            foreach (var list in lista)
+            {
+                Console.WriteLine(list);
+            }
+
+            Console.WriteLine("\nLista count: " + lista.Count);
+
+            Console.Write("------------------------------------------------------" + "\n");
+
             Console.ReadLine();
         }
 
+        static bool TestLocalizador(string localizador)
+        {
+            return localizador[0] == 'A';
+
+        }
         void TestarCalculos()
         {
             var soma1 = Calculator.SomarNumeros(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
