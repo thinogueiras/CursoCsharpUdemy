@@ -8,6 +8,60 @@ namespace Estrutura_de_Dados
     {
         static void Main(string[] args)
         {
+            var matriz = new double[2, 3]; // Matriz = Array Bidimensional
+
+            Console.WriteLine("Total de elementos da matriz: " + matriz.Length);
+
+            Console.WriteLine("Quantidade de linhas: " + matriz.Rank);
+
+            Console.WriteLine("Tamanho da primeira dimensão da matriz[0], que também é a quantidade de linhas: " + matriz.GetLength(0));
+
+            Console.WriteLine("Tamanho da segunda dimensão da matriz[1], que também é a quantidade de colunas: " + matriz.GetLength(1));
+
+            Console.WriteLine("------------------------------------------------------------------------------------");
+
+            var n = int.Parse(Console.ReadLine());
+
+            var mat = new int[n, n];
+
+            for (int i = 0; i < n; i++) // Percorre as linhas da matriz
+            {
+                var valores = Console.ReadLine().Split(' ');
+                
+                for (int j = 0; j < n; j++) // Percorre as colunas da matriz
+                {
+                    mat[i, j] = int.Parse(valores[j]);
+                }
+            }
+
+            Console.Write("\nDiagonal principal: ");
+
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write(mat[i, i] + " ");
+            }
+
+            var count = 0;
+
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    if (mat[i, j] < 0)
+                    {
+                        count++;
+                    }
+                }
+            }
+
+            Console.WriteLine();
+            Console.Write("\nQuantidade de números negativos: " + count);
+
+            Console.ReadLine();
+        }
+
+        void TestaListas()
+        {
             var lista = new List<string>()
             {
                 "Marco",
@@ -97,8 +151,6 @@ namespace Estrutura_de_Dados
             Console.WriteLine("\nLista count: " + lista.Count);
 
             Console.Write("------------------------------------------------------" + "\n");
-
-            Console.ReadLine();
         }
 
         static bool TestLocalizador(string localizador)
