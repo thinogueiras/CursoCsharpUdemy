@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContaBancaria", "ContaBanca
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estrutura de Dados", "Estrutura de Dados\Estrutura de Dados.csproj", "{7538DEE7-0E1C-4BFD-B285-1A39469DEE76}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyEncapsulamento", "UdemyEncapsulamento\UdemyEncapsulamento.csproj", "{E50C8493-8F7D-4210-ABD5-1DE4AFED616D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encapsulamento", "UdemyEncapsulamento\Encapsulamento.csproj", "{B8A0201D-D34D-4870-B51F-D91699303862}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{7538DEE7-0E1C-4BFD-B285-1A39469DEE76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7538DEE7-0E1C-4BFD-B285-1A39469DEE76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7538DEE7-0E1C-4BFD-B285-1A39469DEE76}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E50C8493-8F7D-4210-ABD5-1DE4AFED616D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E50C8493-8F7D-4210-ABD5-1DE4AFED616D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E50C8493-8F7D-4210-ABD5-1DE4AFED616D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E50C8493-8F7D-4210-ABD5-1DE4AFED616D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8A0201D-D34D-4870-B51F-D91699303862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8A0201D-D34D-4870-B51F-D91699303862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8A0201D-D34D-4870-B51F-D91699303862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8A0201D-D34D-4870-B51F-D91699303862}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
