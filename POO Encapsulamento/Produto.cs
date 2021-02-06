@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Globalization;
 
-namespace UdemyEncapsulamento
+namespace POO_Encapsulamento
 {
     public class Produto
     {

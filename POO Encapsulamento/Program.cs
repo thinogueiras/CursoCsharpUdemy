@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace UdemyEncapsulamento
+namespace POO_Encapsulamento
 {
     class Program
     {
