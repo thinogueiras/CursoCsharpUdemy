@@ -20,7 +20,7 @@ namespace POO_Encapsulamento
             Console.ReadLine();
         } 
         
-        static void TestarCalculadora()
+        void TestarCalculadora()
         {
             //var calc = new Calculadora();
 
@@ -37,7 +37,7 @@ namespace POO_Encapsulamento
             Console.WriteLine($"Valor de PI: {Calculadora.Pi.ToString("F2")}");
         }
 
-        static void testarprodutosconsole()
+        void testarprodutosconsole()
         {
             var p = new Produto("TV", 500.00, 10);
 
@@ -78,7 +78,7 @@ namespace POO_Encapsulamento
 
         }
 
-        static void CalcularAreaComPOO()
+        void CalcularAreaComPOO()
         {
             var x = new Triangulo();
             var y = new Triangulo();
@@ -109,8 +109,7 @@ namespace POO_Encapsulamento
                 Console.WriteLine("\nMaior área: Y");
         }
 
-
-        static void CalcularAreaSemPOO()
+        void CalcularAreaSemPOO()
         {
             double xA, xB, xC, yA, yB, yC;
 
