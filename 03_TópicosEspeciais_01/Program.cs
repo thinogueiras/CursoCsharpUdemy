@@ -172,10 +172,83 @@ namespace Tópicos_Especiais_01
             Console.WriteLine("Trabalhando com propriedades e operações com TimeSpan");
             Console.WriteLine();
 
+            var ts1 = TimeSpan.MaxValue;
+            var ts2 = TimeSpan.MinValue;
+            var ts3 = TimeSpan.Zero;
+            Console.WriteLine(ts1);
+            Console.WriteLine(ts2);
+            Console.WriteLine(ts3);
+
+            var t = new TimeSpan(2, 3, 5, 7, 11);
+            Console.WriteLine(t);
+            Console.WriteLine("Days: " + t.Days);
+            Console.WriteLine("Hours: " + t.Hours);
+            Console.WriteLine("Minutes: " + t.Minutes);
+            Console.WriteLine("Milliseconds: " + t.Milliseconds);
+            Console.WriteLine("Seconds: " + t.Seconds);
+            Console.WriteLine("Ticks: " + t.Ticks);
+            Console.WriteLine("TotalDays: " + t.TotalDays);
+            Console.WriteLine("TotalHours: " + t.TotalHours);
+            Console.WriteLine("TotalMinutes: " + t.TotalMinutes);
+            Console.WriteLine("TotalSeconds: " + t.TotalSeconds);
+            Console.WriteLine("TotalMilliseconds: " + t.TotalMilliseconds);
+
+            Console.WriteLine();
+            var ts4 = new TimeSpan(1, 30, 10);
+            var ts5 = new TimeSpan(0, 10, 5);
+            var sum = ts4.Add(ts5);
+            var dif = ts4.Subtract(ts5);
+            var mult = ts4.Multiply(2.0);
+            var div = ts4.Divide(2.0);
+
+            Console.WriteLine(ts4);
+            Console.WriteLine(ts5);
+            Console.WriteLine(sum);
+            Console.WriteLine(dif);
+            Console.WriteLine(mult);
+            Console.WriteLine(div);
+
+            Console.WriteLine();
+            Console.WriteLine("Trabalhando com DateTimeKind e padrão ISO 8601");
+            Console.WriteLine();
+
+            var dt01 = new DateTime(2000, 8, 15, 13, 5, 58, DateTimeKind.Local);
+            var dt02 = new DateTime(2000, 8, 15, 13, 5, 58, DateTimeKind.Utc);
+            var dt03 = new DateTime(2000, 8, 15, 13, 5, 58);
+            Console.WriteLine("dt01: " + dt01);
+            Console.WriteLine("dt01 Kind: " + dt01.Kind);
+            Console.WriteLine("dt01 to Local: " + dt01.ToLocalTime());
+            Console.WriteLine("dt01 to Utc: " + dt01.ToUniversalTime());
+            Console.WriteLine();
+            Console.WriteLine("dt02: " + dt02);
+            Console.WriteLine("dt02 Kind: " + dt02.Kind);
+            Console.WriteLine("dt02 to Local: " + dt02.ToLocalTime());
+            Console.WriteLine("dt02 to Utc: " + dt02.ToUniversalTime());
+            Console.WriteLine();
+            Console.WriteLine("dt03: " + dt03);
+            Console.WriteLine("dt03 Kind: " + dt03.Kind);
+            Console.WriteLine("dt03 to Local: " + dt03.ToLocalTime());
+            Console.WriteLine("dt03 to Utc: " + dt03.ToUniversalTime());
+
+            var dt04 = DateTime.Parse("2000-08-15 13:05:58");
+            var dt05 = DateTime.Parse("2000-08-15T13:05:58Z"); // cria local DateTime
+            Console.WriteLine("dt04: " + dt04);
+            Console.WriteLine("dt04 Kind: " + dt04.Kind);
+            Console.WriteLine("dt04 to Local: " + dt04.ToLocalTime());
+            Console.WriteLine("dt04 to Utc: " + dt04.ToUniversalTime());
+            Console.WriteLine();
+            Console.WriteLine("dt05: " + dt05);
+            Console.WriteLine("dt05 Kind: " + dt05.Kind);
+            Console.WriteLine("dt05 to Local: " + dt05.ToLocalTime());
+            Console.WriteLine("dt05 to Utc: " + dt05.ToUniversalTime());
+            Console.WriteLine();
+            Console.WriteLine(dt05.ToString("yyyy-MM-ddTHH:mm:ssZ")); // cuidado!
+            Console.WriteLine(dt05.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ssZ"));
+
             Console.ReadLine();
         }
 
-        void TestaSwitchAndIfCondTernaria()
+        static void TestaSwitchAndIfCondTernaria()
         {
             string day;
             bool result = true;

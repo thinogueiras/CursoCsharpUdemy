@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Globalization;
 
-namespace Tudo_Bank
+namespace POO_Encapsulamento
 {
     public class ContaBancaria
     {
