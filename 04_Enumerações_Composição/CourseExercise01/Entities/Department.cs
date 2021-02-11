@@ -6,12 +6,7 @@ namespace EnumeraçõesComposições.CourseExercise01.Entities
 {
     public class Department
     {
-        public string Name { get; set; }
-
-        public Department()
-        {
-
-        }
+        public string Name { get; set; } 
 
         public Department(string name)
         {

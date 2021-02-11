@@ -13,11 +13,6 @@ namespace EnumeraçõesComposições.CourseExercise01.Entities
         public Department Department { get; set; }
         public List<HourContract> Contracts { get; set; } = new List<HourContract>(); // Um trabalhador pode possuir vários contratos - Associação de 1 para muitos
 
-        public Worker()
-        {
-
-        }
-
         public Worker(string name, WorkerLevel level, double baseSalary, Department department)
         {
             Name = name;
