@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace POO_Encapsulamento
+namespace Encapsulamento
 {
     public class Triangulo
     {

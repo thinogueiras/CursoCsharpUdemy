@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace POO_Herança_Polimorfismo
+namespace Herança_Polimorfismo
 {
     class Program
     {

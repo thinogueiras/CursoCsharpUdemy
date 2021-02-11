@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace POO_Encapsulamento
+namespace Encapsulamento
 {
     public class Calculadora
     {
