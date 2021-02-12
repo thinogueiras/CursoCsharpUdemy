@@ -5,9 +5,4 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>EnumeraçõesComposições</RootNamespace>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Folder Include="CourseExercise02\Entities\Enums\" />
-  </ItemGroup>
-
 </Project>

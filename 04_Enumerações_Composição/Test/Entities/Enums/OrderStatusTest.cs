@@ -1,6 +1,6 @@
 ﻿namespace EnumeraçõesComposições.Entities.Enums
 {
-    public enum OrderStatus : int 
+    public enum OrderStatusTest : int 
     {
         PendingPayment = 0,
         Processing = 1,
