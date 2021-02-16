@@ -2,8 +2,13 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>    
+    <LangVersion>preview</LangVersion>    
     <RootNamespace>HerançaPolimorfismo</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Exercise04\Entities\" />
+  </ItemGroup>
 
 </Project>

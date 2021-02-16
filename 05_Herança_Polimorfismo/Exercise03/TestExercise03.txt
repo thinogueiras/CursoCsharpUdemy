@@ -1,0 +1,37 @@
+﻿var list = new List<Shape>();
+
+Console.Write("Enter the number of shapes: ");
+var n = int.Parse(Console.ReadLine());
+
+for (int i = 1; i <= n; i++)
+{
+    Console.WriteLine($"Shape #{i} data:");
+    Console.Write("Rectangle or Circle (r/c)? ");
+    var ch = char.Parse(Console.ReadLine());
+    Console.Write("Color (Black/Blue/Red): ");
+    var color = Enum.Parse<Color>(Console.ReadLine());
+
+    if (ch == 'r' || ch == 'R')
+    {
+        Console.Write("Width: ");
+        var width = double.Parse(Console.ReadLine());
+        Console.Write("Height: ");
+        var heigth = double.Parse(Console.ReadLine());
+        list.Add(new Rectangle(width, heigth, color));
+    }
+
+    else
+    {
+        Console.Write("Radius: ");
+        var radius = double.Parse(Console.ReadLine());
+        list.Add(new Circle(radius, color));
+    }
+}
+
+Console.WriteLine();
+Console.WriteLine("SHAPE AREAS:");
+
+foreach (var shape in list)
+{
+    Console.WriteLine($"{shape.Area().ToString("F2", CultureInfo.InvariantCulture)}");
+}

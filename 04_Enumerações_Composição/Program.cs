@@ -27,7 +27,7 @@ namespace Enumerações_Composições
             var client = new Client(clientName, email, birthDate);
             var order = new Order(DateTime.Now, status, client);
 
-            Console.Write("How many items to this order? : ");
+            Console.Write("\nHow many items to this order? : ");
             var n = int.Parse(Console.ReadLine());
 
             for (int i = 1; i <= n; i++)

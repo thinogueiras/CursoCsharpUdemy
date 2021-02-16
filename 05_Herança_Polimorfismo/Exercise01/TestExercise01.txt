@@ -1,0 +1,39 @@
+﻿var list = new List<Employee>();
+
+Console.Write("Enter the number of employees: ");
+var n = int.Parse(Console.ReadLine());
+
+for (int i = 1; i <= n; i++)
+{
+Console.WriteLine($"Employee #{i} data: ");
+Console.Write("Outsourced (y/n)? ");
+var outsorced = char.Parse(Console.ReadLine());
+Console.Write("Name: ");
+var name = Console.ReadLine();
+Console.Write("Hours: ");
+var hours = int.Parse(Console.ReadLine());
+Console.Write("Value per Hour: ");
+var valuePerHour = double.Parse(Console.ReadLine());
+
+if (outsorced == 'y')
+{
+Console.Write("Additional charge: ");
+var addtionalCharge = double.Parse(Console.ReadLine());
+list.Add(new OutsourcedEmployee(name, hours, valuePerHour, addtionalCharge));
+}
+
+else
+{
+list.Add(new Employee(name, hours, valuePerHour));
+}
+}
+
+Console.WriteLine();
+Console.WriteLine("PAYMENTS:");
+
+foreach (var employee in list)
+{
+Console.WriteLine($"{employee.Name} - $ {employee.Payment().ToString("F2", CultureInfo.InvariantCulture)}");
+}
+
+Console.ReadLine();

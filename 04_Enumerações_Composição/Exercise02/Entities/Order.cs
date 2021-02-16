@@ -13,11 +13,6 @@ namespace EnumeraçõesComposições.CourseExercise02.Entities
         public OrderStatus Status { get; set; }
         public Client Client { get; set; }
         public List<OrderItem> Items { get; set; } = new List<OrderItem>();
-
-        public Order()
-        {
-
-        }
         
         public Order(DateTime moment, OrderStatus status, Client client)
         {
@@ -39,6 +34,7 @@ namespace EnumeraçõesComposições.CourseExercise02.Entities
         public double Total()
         {
             double sum = 0.0;
+
             foreach (OrderItem item in Items)
             {
                 sum += item.SubTotal();
@@ -48,16 +44,17 @@ namespace EnumeraçõesComposições.CourseExercise02.Entities
 
         public override string ToString()
         {
-            StringBuilder sb = new StringBuilder();
+            var sb = new StringBuilder();
             sb.AppendLine("Order moment: " + Moment.ToString("dd/MM/yyyy HH:mm:ss"));
             sb.AppendLine("Order status: " + Status);
             sb.AppendLine("Client: " + Client);
-            sb.AppendLine("Order items:");
+            sb.AppendLine("\nOrder items:");
+
             foreach (OrderItem Z in Items)
             {
                 sb.AppendLine(Z.ToString());
             }
-            sb.AppendLine("Total price: $" + Total().ToString("F2", CultureInfo.InvariantCulture));
+            sb.AppendLine("\nTotal price: $ " + Total().ToString("F2", CultureInfo.InvariantCulture));
             return sb.ToString();
         }
     }

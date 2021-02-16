@@ -1,4 +1,10 @@
-﻿using System;
+﻿using HerançaPolimorfismo.Exercise01.Entites;
+using HerançaPolimorfismo.Exercise02.Entities;
+using HerançaPolimorfismo.Exercise03.Entities;
+using HerançaPolimorfismo.Exercise03.Entities.Enums;
+using System;
+using System.Collections.Generic;
+using System.Globalization;
 
 namespace Herança_Polimorfismo
 {
@@ -6,7 +12,7 @@ namespace Herança_Polimorfismo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
         }
     }
 }
