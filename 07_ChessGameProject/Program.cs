@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _07_ChessGameProject
+namespace ChessGameProject
 {
     class Program
     {

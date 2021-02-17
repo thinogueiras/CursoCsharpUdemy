@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06_TratamentoExceções", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_EnumeraçõesComposições", "04_Enumerações_Composição\04_EnumeraçõesComposições.csproj", "{1BB3B3E8-58F9-4F52-A338-E4A0E76C3559}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_ChessGameProject", "07_ChessGameProject\07_ChessGameProject.csproj", "{9240BBBB-C25E-4BE7-A860-D94D9C828267}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_ChessGameProject", "07_ChessGameProject\07_ChessGameProject.csproj", "{9240BBBB-C25E-4BE7-A860-D94D9C828267}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_Arquivos", "08_Arquivos\08_Arquivos.csproj", "{8121C72F-8F3B-4DC7-BC4E-881347AAD291}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{9240BBBB-C25E-4BE7-A860-D94D9C828267}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9240BBBB-C25E-4BE7-A860-D94D9C828267}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9240BBBB-C25E-4BE7-A860-D94D9C828267}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8121C72F-8F3B-4DC7-BC4E-881347AAD291}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8121C72F-8F3B-4DC7-BC4E-881347AAD291}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8121C72F-8F3B-4DC7-BC4E-881347AAD291}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8121C72F-8F3B-4DC7-BC4E-881347AAD291}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
