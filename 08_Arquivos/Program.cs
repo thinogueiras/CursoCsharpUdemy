@@ -7,6 +7,46 @@ namespace Arquivos
     {
         static void Main(string[] args)
         {
+            string path = @"c:\myfolder\file1.txt";
+            Console.WriteLine("DirectorySeparatorChar: " + Path.DirectorySeparatorChar);
+            Console.WriteLine("PathSeparator: " + Path.PathSeparator);
+            Console.WriteLine("GetDirectoryName: " + Path.GetDirectoryName(path));
+            Console.WriteLine("GetFileName: " + Path.GetFileName(path));
+            Console.WriteLine("GetExtension: " + Path.GetExtension(path));
+            Console.WriteLine("GetFileNameWithoutExtension: " + Path.GetFileNameWithoutExtension(path));
+            Console.WriteLine("GetFullPath: " + Path.GetFullPath(path));
+            Console.WriteLine("GetTempPath: " + Path.GetTempPath());
+
+            Console.ReadLine();
+        }
+
+        void TestDirectory()
+        {
+            string path = @"c:\MyFolderTestCsharp";
+            try
+            {
+                var folders = Directory.EnumerateDirectories(path, "*.*", SearchOption.AllDirectories);
+                Console.WriteLine("FOLDERS:");
+                foreach (string s in folders)
+                {
+                    Console.WriteLine(s);
+                }
+                var files = Directory.EnumerateFiles(path, "*.*", SearchOption.AllDirectories);
+                Console.WriteLine("\nFILES:");
+                foreach (string s in files)
+                {
+                    Console.WriteLine(s);
+                }
+                Directory.CreateDirectory(@"c:\MyFolderTestCsharpr");
+            }
+            catch (IOException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
+
+        void TestUsing02()
+        {
             var sourcePath = "c:\\test1_csharp.txt"; // Ao utilizar a classe File, o arquivo deve existir antes da execução do programa
             var targetPath = "c:\\test2_csharp.txt"; // O arquivo foi criado após a execução do programa
 
@@ -33,10 +73,10 @@ namespace Arquivos
             catch (IOException e)
             {
                 Console.WriteLine(e.Message);
-            }            
+            }
         }
 
-        void TesteUsing01()
+        void TestUsing01()
         {
             var path = "c:\\test1_csharp.txt";
 

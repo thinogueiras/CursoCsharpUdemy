@@ -7,8 +7,4 @@
     <RootNamespace>HerançaPolimorfismo</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Exercise04\Entities\" />
-  </ItemGroup>
-
 </Project>
