@@ -1,9 +1,10 @@
 ﻿using System;
+using SolutionWithInteface;
 using System.Globalization;
-using Interfaces.Entities;
-using Interfaces.Services;
+using SolutionWithInteface.Entities;
+using SolutionWithInteface.Services;
 
-namespace Interfaces
+namespace SolutionWithInteface
 {
     class Program
     {
@@ -25,13 +26,12 @@ namespace Interfaces
 
             var carRental = new CarRental(start, finish, new Vehicle(carModel));
 
-            var rentalService = new RentalService(hour, day);
+            var rentalService = new RentalService(hour, day, new BrazilTaxService());
 
             rentalService.ProcessInvoice(carRental);
 
             Console.WriteLine("\nINVOICE:");
             Console.WriteLine(carRental.Invoice);
-
 
             Console.ReadLine();
         }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace Tópicos_Especiais_01
+namespace Tópicos_Especiais
 {
     class Program
     {

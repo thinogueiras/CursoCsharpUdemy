@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_Encapsulamento", "01_Enc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_EstruturasDados", "02_Estrutura_ de_ Dados\02_EstruturasDados.csproj", "{9065C5DA-DDBB-49C0-87C0-59E83FB7716A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_TopicosEspeciais", "03_TópicosEspeciais_01\03_TopicosEspeciais.csproj", "{98D7A780-5950-432E-819B-107334501769}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_TópicosEspeciais", "03_TópicosEspeciais_01\03_TópicosEspeciais.csproj", "{98D7A780-5950-432E-819B-107334501769}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_HerançaPolimorfismo", "05_Herança_Polimorfismo\05_HerançaPolimorfismo.csproj", "{83A63A76-BC9B-4C6C-921A-38BF2F38F346}"
 EndProject
@@ -19,7 +19,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_ChessGameProject", "07_C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_Arquivos", "08_Arquivos\08_Arquivos.csproj", "{8121C72F-8F3B-4DC7-BC4E-881347AAD291}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_Interfaces", "09_Interfaces\09_Interfaces.csproj", "{102A134F-88F5-48D9-A3D3-82873AA0913C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09.01_SolutionWithoutInterface", "09_Interfaces\09.01_SolutionWithoutInterface.csproj", "{102A134F-88F5-48D9-A3D3-82873AA0913C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09.02_SolutionWithInteface", "09.02_SolutionWithInteface\09.02_SolutionWithInteface.csproj", "{98009A07-F3A6-47F9-9D31-57A9D7D80035}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09.03_InterfaceExercise", "09.03_InterfaceExercise\09.03_InterfaceExercise.csproj", "{CE38B5F2-0177-4EEC-8A81-D96D1FEAE4AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.04_HerançaMúltipla", "09.04_HerançaMúltipla\09.04_HerançaMúltipla.csproj", "{D4577E91-69AF-4700-88D1-172D475BB92A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.05_IterfaceIComparable", "09.05_IterfaceIComparable\09.05_IterfaceIComparable.csproj", "{C91BB02A-0FE3-423C-A9D1-EA65228172D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +71,22 @@ Global
 		{102A134F-88F5-48D9-A3D3-82873AA0913C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{102A134F-88F5-48D9-A3D3-82873AA0913C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{102A134F-88F5-48D9-A3D3-82873AA0913C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98009A07-F3A6-47F9-9D31-57A9D7D80035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98009A07-F3A6-47F9-9D31-57A9D7D80035}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98009A07-F3A6-47F9-9D31-57A9D7D80035}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98009A07-F3A6-47F9-9D31-57A9D7D80035}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE38B5F2-0177-4EEC-8A81-D96D1FEAE4AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE38B5F2-0177-4EEC-8A81-D96D1FEAE4AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE38B5F2-0177-4EEC-8A81-D96D1FEAE4AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE38B5F2-0177-4EEC-8A81-D96D1FEAE4AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4577E91-69AF-4700-88D1-172D475BB92A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4577E91-69AF-4700-88D1-172D475BB92A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4577E91-69AF-4700-88D1-172D475BB92A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4577E91-69AF-4700-88D1-172D475BB92A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C91BB02A-0FE3-423C-A9D1-EA65228172D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C91BB02A-0FE3-423C-A9D1-EA65228172D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C91BB02A-0FE3-423C-A9D1-EA65228172D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C91BB02A-0FE3-423C-A9D1-EA65228172D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
