@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Tratamento_de_Exceções
+namespace TratamentoDeExceções
 {
     class Program
     {

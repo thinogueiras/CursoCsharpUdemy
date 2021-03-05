@@ -46,6 +46,7 @@ namespace Generics
             e.ExceptWith(b);
 
             PrintColletion(e);
+            
         }
 
         static void PrintColletion<T>(IEnumerable<T> collection)
