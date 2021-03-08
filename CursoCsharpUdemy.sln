@@ -13,15 +13,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10.02_Generics", "10.02_Gen
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10.03_Generics", "10.03_Generics\10.03_Generics.csproj", "{54E56B1E-2D96-41CD-899B-00CA9F653E29}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10.04_Generics", "10.04_Generics\10.04_Generics.csproj", "{60DC4C28-64DF-4946-87CA-5B39E5065276}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10.04_Generics.HashSetAndSortedSet", "10.04_Generics\10.04_Generics.HashSetAndSortedSet.csproj", "{60DC4C28-64DF-4946-87CA-5B39E5065276}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10.01_Generics", "10.01_Generics\10.01_Generics.csproj", "{6FFC9B4B-F595-418E-B4BD-E1C505E34AB8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10.05_Generics", "10.05_Generics\10.05_Generics.csproj", "{A5AC5FCF-2E4A-4314-A8B0-5DB6D6A2F9D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10.05_Generics.HashColletions.Equals", "10.05_Generics\10.05_Generics.HashColletions.Equals.csproj", "{A5AC5FCF-2E4A-4314-A8B0-5DB6D6A2F9D4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10.06_Generics", "10.06_Generics\10.06_Generics.csproj", "{66711A58-745F-4D44-B6C0-EE05D4A89E46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10.06_Generics.HashSetAndArquive", "10.06_Generics\10.06_Generics.HashSetAndArquive.csproj", "{66711A58-745F-4D44-B6C0-EE05D4A89E46}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10.07_Generics", "10.07_Generics\10.07_Generics.csproj", "{750EA868-35C8-46BF-945A-B94FB076DF26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10.07_Generics.Dictionary", "10.07_Generics\10.07_Generics.Dictionary.csproj", "{750EA868-35C8-46BF-945A-B94FB076DF26}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11_ExtensionMethods", "11_ExtensionMethods\11_ExtensionMethods.csproj", "{4F9593C7-C1D9-4152-9665-DDB0087A5DE9}"
 EndProject
