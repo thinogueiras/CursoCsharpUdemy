@@ -10,8 +10,7 @@ namespace Generics.Exercise02
         static void Main(string[] args)
         {
             try
-            {
-                Console.WriteLine("Test");
+            {              
                 Console.Write("Enter file full path: ");
                 var path = Console.ReadLine();                
 
