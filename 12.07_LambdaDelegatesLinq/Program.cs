@@ -67,6 +67,39 @@ namespace LambdaDelegatesLinq
 
             Console.WriteLine();
 
+            var r10 = listProducts.Max(p => p.Price);
+            Console.WriteLine("Max Price: " + r10);
+
+            var r11 = listProducts.Min(p => p.Price);
+            Console.WriteLine("Min Price: " + r11);
+
+            var r12 = listProducts.Where(p => p.Category.Id == 1).Sum(p => p.Price);
+            Console.WriteLine("Category 1 Sum prices: " + r12);
+
+            var r13 = listProducts.Where(p => p.Category.Id == 1).Average(p => p.Price);
+            Console.WriteLine("Category 1 Sum prices: " + r13);
+
+            var r14 = listProducts.Where(p => p.Category.Id == 5).Select(p => p.Price).DefaultIfEmpty(0.0).Average(); // Preço já existente no Select
+            Console.WriteLine("Category 5 Average prices: " + r14);
+
+            var r15 = listProducts.Where(p => p.Category.Id == 5).Select(p => p.Price).Aggregate(0.0, (x, y) => x + y); // Tratando possível coleção vazia
+            Console.WriteLine("Category 1 aggretate sum: " + r15);
+
+            Console.WriteLine();
+
+            var r16 = listProducts.GroupBy(p => p.Category);
+            foreach (var group in r16)
+            {
+                Console.WriteLine("Category " + group.Key.Name + ":");
+                foreach (Product p in group)
+                {
+                    Console.WriteLine(p);
+                }
+                Console.WriteLine();
+            }
+
+            Console.ReadLine();
+                        
         }
     }
 }

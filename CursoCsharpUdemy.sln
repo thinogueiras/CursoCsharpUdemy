@@ -63,9 +63,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12.04_LambdaDelegatesLinq",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12.05_LambdaDelegatesLinq", "12.05_LambdaDelegatesLinq\12.05_LambdaDelegatesLinq.csproj", "{7D7CE15C-BE25-4573-864E-C8CCF5D932AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.06_LambdaDelegatesLinq", "12.06_LambdaDelegatesLinq\12.06_LambdaDelegatesLinq.csproj", "{668E62D9-D3C3-4CE8-9ED3-AD2CB1ECD8BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12.06_LambdaDelegatesLinq", "12.06_LambdaDelegatesLinq\12.06_LambdaDelegatesLinq.csproj", "{668E62D9-D3C3-4CE8-9ED3-AD2CB1ECD8BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.07_LambdaDelegatesLinq", "12.07_LambdaDelegatesLinq\12.07_LambdaDelegatesLinq.csproj", "{E8423427-0CF3-4656-9471-50B034E9169D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12.07_LambdaDelegatesLinq", "12.07_LambdaDelegatesLinq\12.07_LambdaDelegatesLinq.csproj", "{E8423427-0CF3-4656-9471-50B034E9169D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.08_LambdaDelegatesLinq", "12.08_LambdaDelegatesLinq\12.08_LambdaDelegatesLinq.csproj", "{0A72CCE8-588C-479B-830B-6E58F0AC7120}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -201,6 +203,10 @@ Global
 		{E8423427-0CF3-4656-9471-50B034E9169D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8423427-0CF3-4656-9471-50B034E9169D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8423427-0CF3-4656-9471-50B034E9169D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A72CCE8-588C-479B-830B-6E58F0AC7120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A72CCE8-588C-479B-830B-6E58F0AC7120}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A72CCE8-588C-479B-830B-6E58F0AC7120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A72CCE8-588C-479B-830B-6E58F0AC7120}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
